@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import CircularProgress from "@mui/material/CircularProgress";
-import Box from "@mui/material/Box";
+
 function App() {
   const [data, setData] = useState({});
   const [location, setLocation] = useState("");
@@ -103,9 +102,7 @@ function App() {
           </div>
         </>
       ) : (
-        <Box sx={{ display: "flex" }}>
-          <CircularProgress />
-        </Box>
+        <>Loading</>
       )}
     </div>
   );
