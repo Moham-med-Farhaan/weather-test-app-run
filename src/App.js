@@ -102,7 +102,7 @@ function App() {
           </div>
         </>
       ) : (
-        <>Loading</>
+        <div className="temp">LOADING</div>
       )}
     </div>
   );
